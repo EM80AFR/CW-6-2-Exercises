@@ -15,7 +15,10 @@
         public static void PrintMassage(string? inputStr)
         {
             if (string.IsNullOrEmpty(inputStr))
+            {
+                Console.WriteLine("Your message is null/empty.");
                 return;
+            }
 
             Console.WriteLine($"{inputStr}");
         }
