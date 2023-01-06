@@ -15,7 +15,11 @@
         public static void PrintMassage(string? inputStr)
         {
             if (string.IsNullOrEmpty(inputStr))
+            {
+                var userInput = Console.ReadLine()!;
+                Console.WriteLine(userInput);
                 return;
+            }
 
             Console.WriteLine($"{inputStr}");
         }
