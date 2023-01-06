@@ -16,6 +16,7 @@
         {
             if (string.IsNullOrEmpty(inputStr))
             {
+                Console.WriteLine("Your message is null/empty.");
                 var userInput = Console.ReadLine()!;
                 Console.WriteLine(userInput);
                 return;
